@@ -1,31 +1,57 @@
-1. Proje;
+# Proje 1: Generative Adversarial Networks (GAN)
 
-İlk projede yazılımın geliştirilmesi şu sırayla oldu: ilk olarak internetten aldığım bir "other model" ile GAN yapısını anlamaya çalıştım, parametreleri denedim. Bu "other model" ile cifar10 ve mnıst veri seti üzerinde çalıştım. Daha sonra keras kütüphanesi yardımıyla ve araştırmalarım sonucu yararlandığım kaynaklarla GAN_model1'i oluşturdum. Bu modelle cifar10 ve pigs fake fotoğrafları ürettim. Daha sonra pytorch kütüphanesi yardımıyla ve araştırmalarım sonucu yararlandığım kaynaklarlarla GAN_model2'yi oluşturdum bu modeli de pigs fake resimleri üretmek için kullandım.
+## Proje Süreci
+Bu projede GAN yapısını anlamak, farklı veri setleri üzerinde çalışmak ve model performansını değerlendirmek amaçlanmıştır. Aşağıdaki adımlar izlenmiştir:
 
-1. Other Model ---> cifar10 ile eğitildi. Sonuçlar cifar10_othermodel klasöründe. Ağ eğitimi başarılı oldu.
+### 1. Ön Çalışma - Other Model
+- **Model:** İnternetten alınan bir "other model" ile GAN yapısını anlamaya çalıştım.
+- **Veri Seti:** CIFAR-10 ve MNIST.
+- **Sonuçlar:**
+  - CIFAR-10: Başarılı (`cifar10_othermodel` klasörü).
+  - MNIST: Başarılı.
 
-2. GAN_model1 ---> mnıst ile eğitildi. Sonuçlar mnıst_images1 klasöründe. Ağ eğitimi başarılı oldu.
-3. GAN_model1 ---> pigs (47 images version) ile eğitildi. Sonuçlar pig_images 1 klasöründe. Ağ eğitimi başarılı oldu.
+### 2. GAN_model1 Geliştirilmesi
+- **Teknoloji:** Keras kütüphanesi kullanılarak geliştirildi.
+- **Denemeler:**
+  1. **MNIST veri seti** ile eğitildi → **Başarılı** (`mnist_images1` klasörü).
+  2. **Pigs (47 görüntü)** ile eğitildi → **Başarılı** (`pig_images1` klasörü).
+  3. **CIFAR-10 veri seti** ile denendi:
+     - İlk deneme → **Başarısız** (`cifar10_images1` klasörü).
+     - Model revize edildi (katmanlar vb. ayarlandı).
+     - İkinci deneme → **Başarısız** (`cifar10_images2` klasörü).
+     - Model revize edildi.
+     - Üçüncü deneme → **Başarısız** (`cifar10_images3` klasörü).
 
-GAN_model1'in basit veri setlerinde başarılı olduğu görüldü, karmaşık veri seti olan cifar10 ile denemelere başlandı.
+**Sonuç:** GAN_model1, **basit veri setlerinde başarılı** ancak **karmaşık veri setlerinde öğrenme gerçekleştiremiyor**.
 
-4. GAN_model1 ---> cifar10 ile eğitildi. Sonuçlar cifar10_images 1 klasöründe. Ağ eğitimi başarısız oldu. Modelde revizeye gidildi, katmanlar vb. ayarlandı.
-5. GAN_model1 ---> cifar10 ile eğitildi. Sonuçlar cifar10_images 2 klasöründe. Ağ eğitimi başarısız oldu. Modelde revizeye gidildi, katmanlar vb. ayarlandı.
-6. GAN_model1 ---> cifar10 ile eğitildi. Sonuçlar cifar10_images 3 klasöründe. Ağ eğitimi başarısız oldu.
+### 3. GAN_model2 Geliştirilmesi
+- **Teknoloji:** PyTorch kütüphanesi kullanılarak geliştirildi.
+- **Denemeler:**
+  1. **Pigs (47 görüntü)** ile eğitildi → **Başarılı** (`pig_images2` klasörü).
+  2. **Pigs (924 görüntü)** ile eğitildi → **Başarılı** (`pig_images3` klasörü).
 
-Sonuç: GAN_model1; basit veri setlerinde başarılı, karmaşık veri setlerinde ise öğrenme gerçekleştiremiyor.
+**Sonuç:** GAN_model2, **sağlıklı öğrenebilen bir modeldir**.
 
-7. GAN_model2 ---> pigs (47 images version) ile eğitildi. Sonuçlar pig_images 2 klasöründe. Ağ eğitimi başarılı oldu.
-7. GAN_model2 ---> pigs (924 images version) ile eğitildi. Sonuçlar pig_images 3 klasöründe. Ağ eğitimi başarılı oldu.
+### 4. Model Dosyaları
+- `GAN_model1.py` ve `GAN_model2.py` ilgili klasörlerde bulunmaktadır.
 
-Sonuç: GAN_model2; öğrenebilen sağlıklı bir model.
+---
 
-GAN_model1.py ve GAN_model2.py ilgili klasörlerde.
+# Proje 2: Genetik Algoritma ile Knapsack Problemi Çözümü
 
+## Proje Süreci
+Bu projede genetik algoritma kullanarak **Knapsack (Çanta) Problemi** çözülmüştür.
 
+### 1. Ön Çalışma
+- **Proje 1 için yazılan genetik algoritma kodu incelendi.**
+- **Kod, Knapsack problemine uygun hale getirildi.**
+- **Doğru ağırlık ve değer ikililerinin belirlenmesi sağlandı.**
 
-2. Proje;
+### 2. Knapsack Problemi Çözümü
+- **Algoritmanın başarısı, doğal seçilim sürecine bağlıdır.**
+- **Yanlış ağırlık ve değer belirlenmesi, algoritmanın etkin çalışmasını engelleyebilir.**
 
-İkinci projede yazılımın geliştirilmesi şu sırayla oldu: ilk olarak proje 1 için yazdığım genetik algoritma kodunu inceledim. Daha sonra gerekli revizeler ile kodu knapsack problemini çözecek hale getirdim. Ağırlık ve değer ikililerinin doğru belirlenmesi genetik algoritma için hayati önem taşıyor. Aksi halde algoritma düzgün doğal seçilim yapamıyor.
+### 3. Kod Dosyası
+- `Knapsack.java` ilgili klasörlerde bulunmaktadır.
 
-Knapsack.java ilgili klasörlerde.
+---
