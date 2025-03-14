@@ -1,7 +1,7 @@
 # Proje 1: Generative Adversarial Networks (GAN)
 
 ## Proje Süreci
-Bu projede GAN yapısını anlamak, farklı veri setleri üzerinde çalışmak ve model performansını değerlendirmek amaçlanmıştır. Aşağıdaki adımlar izlenmiştir:
+Bu projede GAN yapısını anlamak, farklı veri setleri üzerinde çalışmak ve model performansını değerlendirmek amaçlanmıştır. Aynı zamanda **"Obtaining the visual data required for the detection of rare diseases using Generative Adversarial Network"** amacına yönelik olarak bir ön çalışmadır. Aşağıdaki adımlar izlenmiştir:
 
 ### 1. Ön Çalışma - Other Model
 - **Model:** İnternetten alınan bir "other model" ile GAN yapısını anlamaya çalıştım.
@@ -34,8 +34,6 @@ Bu projede GAN yapısını anlamak, farklı veri setleri üzerinde çalışmak v
 
 ### 4. Model Dosyaları
 - `GAN_model1.py` ve `GAN_model2.py` ilgili klasörlerde bulunmaktadır.
-  
-Bu projeyi, **"Obtaining the visual data required for the detection of rare diseases using Generative Adversarial Network"** amacına yönelik olarak geliştirdim.
 
 ---
 
