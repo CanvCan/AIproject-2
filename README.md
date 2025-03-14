@@ -34,6 +34,8 @@ Bu projede GAN yapısını anlamak, farklı veri setleri üzerinde çalışmak v
 
 ### 4. Model Dosyaları
 - `GAN_model1.py` ve `GAN_model2.py` ilgili klasörlerde bulunmaktadır.
+  
+Bu projeyi, **"Obtaining the visual data required for the detection of rare diseases using Generative Adversarial Network"** amacına yönelik olarak geliştirdim.
 
 ---
 
