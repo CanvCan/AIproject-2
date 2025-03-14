@@ -1,0 +1,1 @@
+cifar10 veri seti 300 MB'a yakın olduğundan egeders sistemine yüklenemiyordu. Dolayısıyla, dosyadan silindi.
