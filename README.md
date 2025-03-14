@@ -43,7 +43,7 @@ Bu projede GAN yapısını anlamak, farklı veri setleri üzerinde çalışmak v
 Bu projede genetik algoritma kullanarak **Knapsack (Çanta) Problemi** çözülmüştür.
 
 ### 1. Ön Çalışma
-- **Proje 1 için yazılan genetik algoritma kodu incelendi.**
+- **AIproject-2 repository'sindeki Question 3 için yazılan genetik algoritma kodu incelendi.**
 - **Kod, Knapsack problemine uygun hale getirildi.**
 - **Doğru ağırlık ve değer ikililerinin belirlenmesi sağlandı.**
 
